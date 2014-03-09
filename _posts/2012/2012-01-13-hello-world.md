@@ -2,7 +2,7 @@
 layout: post
 title: 做一个有所作为的人
 date: 2012-01-13 05:35
-author: root
+author: guoguogis
 comments: true
 categories: [life]
 tags: [life]

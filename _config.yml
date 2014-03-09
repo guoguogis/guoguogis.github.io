@@ -12,7 +12,7 @@ encoding: utf-8
 #
 title : Jeosea's blog
 tagline: Site Tagline
-lasttime: 2014-03-06    # please modify before each push
+lasttime: 2014-03-07    # please modify before each push
 author :
   name : jeosea
   email : guoshun100@foxmail.com
@@ -84,9 +84,9 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
-    disqus :
-      short_name : jeosea|guoguogis
+    provider : duoshuo
+    duoshuo :
+      short_name : jeosea
 #    livefyre :
 #      site_id : 123
 #    intensedebate :
