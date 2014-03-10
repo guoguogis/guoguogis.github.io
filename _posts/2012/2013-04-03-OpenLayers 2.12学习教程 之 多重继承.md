@@ -56,18 +56,6 @@ OpenLayers.Util.extend = function(destination, source) {
              }
           }
 
-/**
-* IE doesn't include the toString property when iterating over an object's
-* properties with the for(property in object) syntax.  Explicitly check if
-* the source has its own toString property.
-*/
-
-/*
-* FF/Windows &lt; 2.0.0.13 reports &quot;Illegal operation on WrappedNative
-* prototype object&quot; when calling hawOwnProperty if the source object
-* is an instance of window.Event.
-*/
-
         var sourceIsEvt = typeof window.Event == &quot;function&quot;
         &amp;&amp; source instanceof window.Event;
 
@@ -108,13 +96,6 @@ OpenLayers.Util.extend = function(destination, source) {
 在Class.js中继续构造我们实际的类以及子类：
 
 ```
-/**********************************************
-/     继承的类
-/**********************************************/
-
-/**
-* 父类:人
-*/
 window.Person=window.Class({
     //姓名
     name:'',
@@ -137,9 +118,7 @@ window.Person=window.Class({
 
 });
 
-/**
-* 子类，学生
-*/
+
 window.Student = window.Class(window.Person,{
     //学校
     school:'',
@@ -152,9 +131,7 @@ window.Student = window.Class(window.Person,{
     }
 });
 
-/**
-*  子类，有工作的人
-*/
+
 window.Worker = window.Class(window.Person,{
     //工作类型
     workType:'',
@@ -163,9 +140,7 @@ window.Worker = window.Class(window.Person,{
 
 });
 
-/**
-* 子类：兼职的学生
-*/
+
 window.PartTimeStudent_Worker = window.Class(window.Student,window.Worker,{
     //兼职的天数
     partTimeDays:0
