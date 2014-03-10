@@ -87,12 +87,12 @@ JB :
     provider : duoshuo
     duoshuo :
       short_name : jeosea
-#    livefyre :
-#      site_id : 123
-#    intensedebate :
-#      account : 123abc
-#    facebook :
-#      appid : 123
+    livefyre :
+      site_id : 123
+    intensedebate :
+      account : 123abc
+    facebook :
+      appid : 123
       num_posts: 5
       width: 580
       colorscheme: light

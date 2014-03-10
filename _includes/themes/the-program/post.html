@@ -41,15 +41,22 @@
 						</ul>
 					</div>
 					<div class="comment">
-					<section>
-				        <h3>Latest Comments</h3>
-				        <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="0" data-show-time="0" data-show-title="0" data-show-admin="0" data-excerpt-length="18"></ul>
-				    </section>
-				    <section style="width:250px;">
-				        <h3>Recently Visitors</h3>
-				          <ul class="ds-recent-visitors" data-num-items="4" data-avatar-size="45" style="margin-top:10px;"></ul>
-				    </section>
-					{% include JB/comments %}
+						{% if page.comments %}
+					        <div class="ds-thread" data-thread-key="{{page.pid}}"></div>
+					        <script type="text/javascript">
+					            var duoshuoQuery = {short_name:'{{ site.JB.comments.duoshuo.short_name }}'};
+					                (function() {
+					                    var ds = document.createElement('script');
+					                    ds.type = 'text/javascript';ds.async = true;
+					                    ds.src = 'http://static.duoshuo.com/embed.js';
+					                    ds.charset = 'UTF-8';
+					                    (document.getElementsByTagName('head')[0] 
+					                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+					                })();
+					        </script>
+					    {% else %}
+					        <div id="ds-thread"><hr /><p>评论已关闭</p></div>
+					    {% endif %}
 					</div>
 				</div><!-- misc-content -->
 			</div><!-- bd -->
