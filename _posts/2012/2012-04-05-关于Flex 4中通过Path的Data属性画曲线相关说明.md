@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 关于Flex 4中通过Path的Data属性画曲线相关说明
+title: 关于Flex4中通过Path的Data属性画曲线相关说明
 date: 2012-04-05 09:46
 author: guoguogis
 comments: true
