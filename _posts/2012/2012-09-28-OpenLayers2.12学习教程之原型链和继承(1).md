@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenLayers 2.12学习教程 之 原型链和继承(1)
+title: OpenLayers2.12学习教程之原型链和继承(1)
 date: 2012-09-28 22:54
 author: root
 comments: true

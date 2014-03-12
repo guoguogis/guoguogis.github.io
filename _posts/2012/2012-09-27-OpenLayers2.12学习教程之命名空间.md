@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenLayers 2.12学习教程 之 命名空间
+title: OpenLayers2.12学习教程之命名空间
 date: 2012-09-27 15:29
 author: guoguogis
 comments: true
