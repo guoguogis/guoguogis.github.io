@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FlashBuilder 4.5创建的项目在导入FlashBuilder4.6后报错的处理
+title: FlashBuilder4.5创建的项目在导入FlashBuilder4.6后报错的处理
 date: 2012-02-09 06:11
 author: guoguogis
 comments: true
