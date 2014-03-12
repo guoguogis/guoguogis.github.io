@@ -8,10 +8,8 @@ categories: [flash]
 tags: [flash]
 ---
 通过设置CSS样式可以设置ToolTip的样式：
-
-[code lang="xml"]
-
-&lt;fx:Style&gt;
+```
+<fx:Style>
  @namespace s &quot;library://ns.adobe.com/flex/spark&quot;;
  @namespace mx &quot;library://ns.adobe.com/flex/mx&quot;;
  mx|ToolTip {
@@ -21,14 +19,13 @@ tags: [flash]
  color: white;
  fontSize: 12;
  }
- &lt;/fx:Style&gt;
-
-[/code]
+ </fx:Style>
+```
 <strong>一个自定义ToolTip中显示自定义图片的例子：</strong></pre>
 我搞了一下才弄出来的，希望大家多提意见：
 
 Application中
-
+```
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;s:Application xmlns:fx="<a href="http://ns.adobe.com/mxml/2009" rel="nofollow">http://ns.adobe.com/mxml/2009</a>"
 xmlns:s="library://ns.adobe.com/flex/spark"
@@ -94,3 +91,4 @@ public function set text(value:String):void {
 &lt;mx:Text text="{this.str}" color="#000000" fontSize="13"/&gt;
 &lt;/mx:VBox&gt;
 &lt;/mx:Canvas&gt;
+```

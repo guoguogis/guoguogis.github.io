@@ -13,7 +13,7 @@ tags: [SEO]
 
 3、文章Title的优化 WordPress默认的Title是“博客名-文章名”，这对SEO很不好，我觉得应该使用“文章名-博客名”的形式，建议安装一个名叫All in One SEO Pack的插件，可以自动将Title进行优化，并增加Descriptions和Keywords的Meta.
 
-4、robots.txt的优化 在博客根目录下放置一个robots.txt的文件，可以指定搜索引擎只收录指定的内容。 对于WordPress来说，有一些地址是不应该被搜索引擎索引的，比如后台程序、日志文件、FEED地址等，一个针对WordPress的robots.txt的例子如下： User-agent: * Disallow: /wp- Disallow: /feed/ Disallow: /comments/feed Disallow: /trackback/
+4、robots.txt的优化 在博客根目录下放置一个robots.txt的文件，可以指定搜索引擎只收录指定的内容。 对于WordPress来说，有一些地址是不应该被搜索引擎索引的，比如后台程序、日志文件、FEED地址等，一个针对WordPress的robots.txt的例子如下： User-agent:  Disallow: /wp- Disallow: /feed/ Disallow: /comments/feed Disallow: /trackback/
 
 5、Sitemap的优化 对于Google搜索引擎来讲，使用Sitemap可以让搜索引擎更为有效的进行索引，安装一个名叫Sitemap Generator的插件可以自动完成Google Sitemap的生成，然后将这个地址提交到Google Webmaster即可。
 

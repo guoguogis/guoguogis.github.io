@@ -17,12 +17,12 @@ tags: [cookie]
 
 所以当有需求要求在访问某个域名下的资源时头文件中带cookie参数，只需要在客户端第一次访问该域名下资源时获取到响应的cookei即可。 PHP中设置Cookie的一段代码如下：
 
-[code lang="php"]
+```
 header(&quot;Content-Type:application/x-javascript; charset=utf-8&quot;);
 //设置COOKIE
 header(&quot;P3P: CP='CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR'&quot;);
 setcookie('api_key', @$_GET['key'], time()+3600, '/', '.mapabc.com');
-[/code]
+```
 
 然而在客户端设置cookie参数，是否也可以访问指定的域名下的资源时带上cookie参数呢？
 <span style="color: #ff0000;">这里注意的是客户端设置的cookie，在访问对应域名下的资源时，如果载体部分是页面本身，则可以将客户端cookie发送到服务端；如果载体不是页面本身， 如SWF文件，则不能将页面设置的cookie发送到服务端。</span>

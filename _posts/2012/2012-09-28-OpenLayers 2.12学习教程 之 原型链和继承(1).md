@@ -16,24 +16,20 @@ tags: [原型链，继承]
 在javascript中构造类（即对象）并定义类的属性有两种方式，一种是通过构造函数内部构造，另外一种是通过原型构造。
 
 下面代码是Person类中定义了两种方式的属性和方法并进行比较的例子：
-
-[code language="js"]
-
+```
 function Person(){
-
-var inervar = '内部参数';
-
-// 通过构造函数来定义类的属性和方法
-this.pro1 = '构造属性';
-this.fun1 = function(){
-inervar = '';
-};
+    var inervar = '内部参数';
+    // 通过构造函数来定义类的属性和方法
+    this.pro1 = '构造属性';
+    this.fun1 = function(){
+        inervar = '';
+    };
 }
 
 // 原型定义类的属性和方法
 Person.prototype.pro2 = '原型属性';
 Person.prototype.fun2 = function (){
-console.log(this.pro2);
+    console.log(this.pro2);
 };
 // 构造对象
 var person1 = new Person();
@@ -42,10 +38,10 @@ var person2 = new Person();
 console.log(person1.fun1 == person2.fun1);//false
 console.log(person1.fun2 == person2.fun2);//true
 
-console.log(person1.pro1 == person2.pro1);//true    由于这里是字符串，比较的是字符串的值
-console.log(person1.pro2 == person2.pro2);//true    由于这里是字符串，比较的是字符串的值
+console.log(person1.pro1 == person2.pro1);//true由于这里是字符串，比较的是字符串的值
+console.log(person1.pro2 == person2.pro2);//true由于这里是字符串，比较的是字符串的值
 
-[/code]
+```
 
 由上面的输出结果可以看出，对于通过构造函数定义的属性和方法，不同对象复制了一份该属性和方法，即同一个构造函数产生的两个对象不共享实例，而对于通过原型构造的方法，不同对象所对应的该方法指向了同一个函数指针；
 
@@ -75,8 +71,7 @@ Javasript中有两个特殊的对象：Object和Function，他们都是构造函
 
 原型链的实例代码为：
 
-[code language="js"]
-
+```
 function Person(){
 
 }
@@ -94,5 +89,4 @@ console.log(person.name); //personName
 console.log(person.__proto__.name);//personName
 console.log(person.__proto__.__proto__.name);//objName
 console.log(person.__proto__.constructor.prototype.name);//personName
-
-[/code]
+```

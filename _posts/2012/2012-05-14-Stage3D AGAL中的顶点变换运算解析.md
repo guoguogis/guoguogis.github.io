@@ -11,8 +11,9 @@ tags: [AGAL, Stage 3D]
 
 在编写Stage3D的应用中，最基础常见的AGAL OpCode是这样：
 
-<code>m44 op,va0,vc0
-</code>
+```
+m44 op,va0,vc0
+```
 这个简单的OpCode构成了寄存器中的Vertex坐标的动态变换。那么接下来，就给出从头至尾的原理分析。
 首先，我们先要了解Stage3D API基本原理之外的矩阵乘法，如果你求学时代已经学过大量的矩阵计算理论，那么你应该庆幸你当初学习的这部分知识并不是没用的花瓶，现在终于有了用武之地。
 
@@ -25,7 +26,8 @@ tags: [AGAL, Stage 3D]
 
 谈到这里，就不难理解Stage3D顶点位置变换了。下面把基础理论，AGAL OpCode和Stage3D API揉在一起，看看一个基本的顶点变化操作，在Stage3D里怎么搞定的。AS代码：
 
-<code>基本AGAL Vertex顶点变换：
+基本AGAL Vertex顶点变换：
+```
 vertexShader=new AGALMiniAssembler();
 vertexShader.assemble(Context3DProgramType.VERTEX,
 "m44 op va0,vc0\n"+ //va0的vertex顶点坐标与vc0中的4x4 Matrix3D进行顶点变换的矩阵乘法，结果放在op位置输出寄存器中
@@ -50,7 +52,7 @@ model3D.appendRotation(getTimer()/50,Vector3D.Z_AXIS);
 context3d.setProgramConstantsFromMatrix(
 Context3DProgramType.VERTEX,
 0, model3D, true );//model3D可以换成modelView3D
-</code>
+```
 按照上面的理论实现的代码，你将会得到一个顶点vertex可以变换的3D物体。整个应用程序的代码可以从这里下载。
 <a href="http://www.7yue.com/upload/Stage3d_triangle.zip" target="_blank">Stage3d_triangle.zip</a>
 

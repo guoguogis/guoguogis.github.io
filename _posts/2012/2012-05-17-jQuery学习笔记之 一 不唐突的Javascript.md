@@ -15,8 +15,7 @@ tags: [jQuery]
 
 但是这样做的话比如一些按钮的事件如click事件也需要提出到行为代码中，如下代码：
 
-[code lang="js"]
-
+```
 window.onload = function (){
 
     document.getElementById('testButton').onClick = function(){
@@ -26,8 +25,7 @@ window.onload = function (){
     }
 
 }
-
-[/code]
+```
 
 如上代码，从一定程度上看，我们为了达到不唐突的javascript的目的而增加了不少代码量，但是这也未尝不是一件好事，它促使我们以编写后台服务器端代码的严谨态度来编写客户端代码。
 

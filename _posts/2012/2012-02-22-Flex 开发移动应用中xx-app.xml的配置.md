@@ -10,8 +10,7 @@ tags: [flash]
 正式开发Flex移动应用已经两周时间了，本以为对其已经很熟悉了的，结果今天编写了一个在地图上定位的应用，却怎么都用不了定位功能，一度还认为是在室内不能够定位呢，汗！！！
 
 查找原因，原来是配置文件中没有将被注释的用于定位信息的配置放开，注意这里说的配置是相对于Android来说的。为了彻底搞清楚这个问题，我研究了相关帮助，地址为：<a href="http://www.gisthink.com/blog/wordpress/wp-admin/post-new.php">http://www.gisthink.com/blog/wordpress/wp-admin/post-new.php</a>。OK，废话少说，直接上源码，逐项解释一遍呗。
-
-[code lang="xml"]
+```
 &lt;android&gt;
 &lt;colorDepth&gt;16bit&lt;/colorDepth&gt;
 &lt;manifestAdditions&gt;&lt;![CDATA[
@@ -39,11 +38,11 @@ tags: [flash]
 ]]&gt;
 &lt;/manifestAdditions&gt;
 &lt;/android&gt;
-[/code]
+```
 
 对于不同的设备分辨率，我们可以通过使用一系列图标设置不同的ICON图标：
 
-[code lang="xml"]
+```
 &lt;icon&gt;
 &lt;image16x16&gt;assets/icons/16.png&lt;/image16x16&gt;
 &lt;image29x29&gt;assets/icons/29.png&lt;/image29x29&gt;
@@ -58,6 +57,6 @@ tags: [flash]
 &lt;image128x128&gt;assets/icons/128.png&lt;/image128x128&gt;
 &lt;image512x512&gt;assets/icons/512.png&lt;/image512x512&gt;
 &lt;/icon&gt;
-[/code]
+```
 
-除此之外还有一些比如初始化参数、id等的配置我就不多解释了，大家都明白的。</pre>
+除此之外还有一些比如初始化参数、id等的配置我就不多解释了，大家都明白的。

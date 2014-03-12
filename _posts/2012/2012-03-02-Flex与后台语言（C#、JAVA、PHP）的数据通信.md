@@ -47,8 +47,7 @@ Flex作为前端展现脚本，无法实现与后台数据库的交互，所以�
 
 在新建的站点flex_php下，创建service.php文件，并编写代码如下：
 
-[code lang="php"]
-
+```
 &lt;?php
 
 class Service
@@ -61,7 +60,7 @@ return (&quot;result:&quot;.$str);
 }
 ?&gt;
 
-[/code]
+```
 
 测试服务端代码：
 
