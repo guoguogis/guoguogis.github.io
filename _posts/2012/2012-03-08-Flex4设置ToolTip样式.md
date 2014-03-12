@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flex 4 设置ToolTip样式
+title: Flex4设置ToolTip样式
 date: 2012-03-08 01:53
 author: guoguogis
 comments: true
@@ -21,20 +21,20 @@ tags: [flash]
  }
  </fx:Style>
 ```
-<strong>一个自定义ToolTip中显示自定义图片的例子：</strong></pre>
+<strong>一个自定义ToolTip中显示自定义图片的例子：</strong>
 我搞了一下才弄出来的，希望大家多提意见：
 
 Application中
 ```
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;s:Application xmlns:fx="<a href="http://ns.adobe.com/mxml/2009" rel="nofollow">http://ns.adobe.com/mxml/2009</a>"
+<?xml version="1.0" encoding="utf-8"?>;
+<s:Application xmlns:fx="<a href="http://ns.adobe.com/mxml/2009" rel="nofollow">http://ns.adobe.com/mxml/2009</a>"
 xmlns:s="library://ns.adobe.com/flex/spark"
-xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600"&gt;
-&lt;fx:Declarations&gt;
-&lt;!-- 将非可视元素（例如服务、值对象）放在此处 --&gt;
-&lt;/fx:Declarations&gt;
-&lt;fx:Script&gt;
-&lt;![CDATA[
+xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600">;
+<fx:Declarations>;
+<!-- 将非可视元素（例如服务、值对象）放在此处 -->;
+</fx:Declarations>;
+<fx:Script>;
+<![CDATA[
 import mx.controls.ToolTip;
 import mx.events.ToolTipEvent;
 import mx.managers.ToolTipManager;
@@ -48,30 +48,30 @@ private function showToolTips(evt:ToolTipEvent):void{
 evt.toolTip.x=a.x + a.width + 10;
 evt.toolTip.y=a.y;
 }
-]]&gt;
-&lt;/fx:Script&gt;
-&lt;mx:HBox height="100%" verticalAlign="middle" width="100%" horizontalAlign="center"&gt;
-&lt;mx:Button id="a"
+]]>;
+</fx:Script>;
+<mx:HBox height="100%" verticalAlign="middle" width="100%" horizontalAlign="center">;
+<mx:Button id="a"
 label="SuperToolTip"
 width="100"
 toolTip="00000"
 toolTipCreate="createToolTips(event);"
-toolTipShow="showToolTips(event);"/&gt;
-&lt;/mx:HBox&gt;
-&lt;/s:Application&gt;
+toolTipShow="showToolTips(event);"/>;
+</mx:HBox>;
+</s:Application>;
 
 自定义ToolTip
 
 MyToolTips.mxml
 
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;mx:Canvas xmlns:fx="<a href="http://ns.adobe.com/mxml/2009" rel="nofollow">http://ns.adobe.com/mxml/2009</a>"
+<?xml version="1.0" encoding="utf-8"?>;
+<mx:Canvas xmlns:fx="<a href="http://ns.adobe.com/mxml/2009" rel="nofollow">http://ns.adobe.com/mxml/2009</a>"
 xmlns:s="library://ns.adobe.com/flex/spark"
 implements="mx.core.IToolTip"
 xmlns:mx="library://ns.adobe.com/flex/mx"
-backgroundColor="#00ff33" alpha=".8" width="100%" borderStyle="solid" cornerRadius="7"&gt;
-&lt;fx:Script&gt;
-&lt;![CDATA[
+backgroundColor="#00ff33" alpha=".8" width="100%" borderStyle="solid" cornerRadius="7">;
+<fx:Script>;
+<![CDATA[
 import mx.core.IToolTip;
 public var str:String="";
 public var str1:String="";
@@ -81,14 +81,14 @@ return _text;
 }
 public function set text(value:String):void {
 }
-]]&gt;
-&lt;/fx:Script&gt;
-&lt;fx:Declarations&gt;
-&lt;!-- 将非可视元素（例如服务、值对象）放在此处 --&gt;
-&lt;/fx:Declarations&gt;
-&lt;mx:VBox width="100%" height="100%"&gt;
-&lt;mx:Image source="{str1}"/&gt;
-&lt;mx:Text text="{this.str}" color="#000000" fontSize="13"/&gt;
-&lt;/mx:VBox&gt;
-&lt;/mx:Canvas&gt;
+]]>;
+</fx:Script>;
+<fx:Declarations>;
+<!-- 将非可视元素（例如服务、值对象）放在此处 -->;
+</fx:Declarations>;
+<mx:VBox width="100%" height="100%">;
+<mx:Image source="{str1}"/>;
+<mx:Text text="{this.str}" color="#000000" fontSize="13"/>;
+</mx:VBox>;
+</mx:Canvas>;
 ```
