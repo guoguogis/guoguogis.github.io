@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [转]Stage3D AGAL中的顶点变换运算解析
+title: Stage3D-AGAL中的顶点变换运算解析
 date: 2012-05-14 15:58
 author: guoguogis
 comments: true
