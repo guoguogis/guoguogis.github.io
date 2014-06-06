@@ -1,4 +1,3 @@
-Enter file contents here
 AngularJS-API-Help
 ==================
 
@@ -179,9 +178,12 @@ AngularJS-API-Help
 
 ## ngSanitize
 #### directive
+
 + ngBindHtml
+
 #### filter
 + linky
+
 #### service
 + $sanitize
 
