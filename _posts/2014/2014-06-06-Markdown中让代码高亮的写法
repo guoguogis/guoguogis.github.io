@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: Markdown中让代码高亮的写法别
@@ -10,7 +9,7 @@ comments: true
 {% include JB/setup %}
 ----------
 
-在*.md文件中有两种代码写法：
+在markdown文件中有两种代码写法：
 
 ### pre>code写法
 
