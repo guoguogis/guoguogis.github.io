@@ -1,6 +1,19 @@
+
+---
+layout: page
+title: Markdown中让代码高亮的写法别
+tagline: Supporting tagline
+tags: [highlight]
+categories: [javascript]
+comments: true
+---
+{% include JB/setup %}
+----------
+
 在*.md文件中有两种代码写法：
 
 ### pre>code写法
+
 <pre><code class="js">
 /**
  * 根据id获取label的内容
@@ -12,7 +25,8 @@ IBaseTag.getILabeltext = function (id) {
 };
 </code></pre>
 
-### ```写法
+### *```*写法
+
 ```javascript
 /**
  * 根据id获取label的内容
@@ -26,3 +40,5 @@ getILabeltext = function (id) {
 
 可以看到第一种只是将代码包裹起来了，并没有高亮；
 第二种却将代码的关键字高亮显示了。
+----------
+
