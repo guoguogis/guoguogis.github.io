@@ -35,8 +35,9 @@ function publishExternalAPI(angular) {
   }
 ```
 > 通过`extend`方法将公共方法挂载到`angular`对象上;
-> 通过`setupModuleLoader`(模块加载器)来创建、加载模块;
+> 通过`setupModuleLoader`(模块加载器)来创建、加载模块angular.module,即angularModule;
 > 通过`angularModule`来定义`ng`模块(命名空间)，并挂载内置的指令，如：`ngBind`等,具体指令用法在后面会一一举例说明;
++ 其中`angularInit`用来获取页面标记的`ng-app`区域;
 
 ## AngularJS的执行函数：
 ```js
@@ -185,6 +186,7 @@ var srcs = {
 angular.extend(des, srcs);
 console.log(des);
 ```
+    + 输出：
 > gender: "male"
 > geter: function (){}
 > name: "misko"
@@ -199,8 +201,8 @@ console.log(des);
     }, log);
 ```
     + 输出结果为:
-    > 0:"name:misko"
-    > 1:"gender:male"
+> 0:"name:misko"
+> 1:"gender:male"
 
 + angular.fromJson
 + angular.identity
@@ -217,6 +219,11 @@ console.log(des);
 + angular.lowercase
 + angular.mock
 + angular.module
+    + 创建/获取模块
+> When passed two or more arguments, a new module is created.  If passed only one argument, an existing module (the name passed as the first argument to `module`) is retrieved.
+以上为：“当传递两个及以上参数时，创建一个模块，当传递一个参数时，调用已经存在的模块！”
+
+
 + angular.noop
 + angular.toJson
 + angular.uppercase
