@@ -122,7 +122,7 @@ categories: [FE]
 + angular.extend
     + 继承，将src中的所有属性挂载到des对象上;
 
-<code><pre>
+<pre><code>
     var des = {};
     var srcs = {
         name: 'misko', 
@@ -132,7 +132,7 @@ categories: [FE]
     };
     angular.extend(des, srcs);
     console.log(des);
-</pre></code>
+</code></pre>
 
 
 输出：
