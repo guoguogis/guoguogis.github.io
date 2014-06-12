@@ -134,12 +134,13 @@ categories: [FE]
     console.log(des);
 </pre></code>
 
-    + 输出：
-
+输出：
 <code><pre>
-gender: "male"
-geter: function (){}
-name: "misko"
+{
+    gender: "male",
+    geter: function (){},
+    name: "misko"
+}
 </pre></code>
 
 + angular.forEach
@@ -153,11 +154,11 @@ name: "misko"
     }, log);
 </pre></code>
 
-    + 输出结果为:
+输出结果为:
 
 <code><pre>
-0:"name:misko"
-1:"gender:male"
+["name:misko",
+"gender:male"]
 </pre></code>
 
 + angular.fromJson
