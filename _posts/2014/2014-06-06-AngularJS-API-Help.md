@@ -11,6 +11,26 @@ categories: [FE]
 ## directive *ng*
 
 + a
+
+ htmlAnchorDirective:修改html的a元素，当herf为空时，禁止了默认的操作；
+
+<code><pre>
+&lt;div&gt;
+    &lt;a href=""&gt;默认a&lt;/a&gt;
+&lt;/div&gt;
+&lt;div ng-app&gt;
+    &lt;a href=""&gt;angularJS-a&lt;/a&gt;
+&lt;/div&gt;
+</pre></code>
+
+ “默认a”标签在点击时会刷新页面,“angularJS-a”标签不进行刷新,使得在AngularJS定义的作用域中使用:
+
+<code><pre>
+&lt;a href="" ng-click="list.addItem()"&gt;Add Item&lt;/a&gt;
+</pre></code>
+
+来创建动作链接。
+
 + form
 + input
 + input *checkbox*
@@ -115,38 +135,195 @@ categories: [FE]
 ## global APIs
 
 + angular.bind
+
+ 通过angular.bind可以将一个函数的执行上下文绑定到指定对象的执行上下文上。<br/>
+ @param {Object} 方法要被绑定到的指定执行上下文;<br/>
+ @param {function()} 方法体;<br/>
+ @param {arguments...} 方法所调用的可选参数;<br/>
+ @returns {function()} 返回方法的指定执行;<br/>
+
+<code><pre>
+var obj = { 
+    name: 'A nice demo', 
+    fx: function() { 
+        console.log(this);
+        console.log(this.name); 
+    } 
+}; 
+window.name = 'I am such a beautiful window!'; 
+function runFx(f) { 
+    f(); 
+} 
+
+var fx2 = angular.bind(obj,obj.fx);
+var fx3 = obj.fx.bind(obj); 
+             
+runFx(obj.fx); 
+runFx(fx2); //a nice demo
+runFx(fx3); //a nice demo
+</pre></code>
+
+输出结果：
+
+<code><pre>
+Window {top: Window, window: Window, location: Location, external: Object, chrome: Object…}
+I am such a beautiful window!
+
+Object {name: "A nice demo", fx: function}
+A nice demo 
+
+Object {name: "A nice demo", fx: function}
+A nice demo 
+</pre></code>
+
+ ECMAScript5也提供了bind原生方法，fx3为原生*bind*方法设置函数的执行上下文，目前该原生方法不支持IE6,7,8;<br/>
+ jQuery,protorype中都提供了类似方法.<br/>
+
 + angular.bootstrap
+
+ 通过该方法手动开始angular应用程序;<br/>
+ @param {DOMElement} 被定义为Angular根的DOM元素.<br/>
+ @param {Array} 需要加载到应用中的模块.
+    数组中的每一项应该是预定义的或者被注入了的；
+    调用的函数应该是被注入可执行的程序块；<br/>
+ @param {Object} 用于定义应用程序的配置选项的配置对象. 
+    *支持一下关键字*：
+    strictDi: 禁用了function的注释.<br/>
+ @returns {auto.$injector} 返回一个最新创建的injector.<br/>
+
+<code class="html"><pre>
+&lt;!doctype html&gt;
+&lt;html lang="zh"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;directive-a&lt;/title&gt;
+    &lt;script type="text/javascript" src="../../bin/angular1.3.0b08.js"&gt;&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div ng-controller="WelcomeController"&gt;{{greeting}}&lt;/div&gt;
+
+    &lt;script type="text/javascript"&gt;
+            var app = angular.module('demo', [])
+            .controller('WelcomeController', function($scope) {
+                $scope.greeting = 'Welcome!';
+            });
+            angular.bootstrap(document, ['demo']);
+        &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></code>   
+
+> note:这里是手动启动angular,所以不能用ng-app指令，否则报错。
+
 + angular.copy
-+ angular.element
-+ angular.equals
-+ angular.extend
-    + 继承，将src中的所有属性挂载到des对象上;
 
-<pre><code>
-    var des = {};
-    var srcs = {
-        name: 'misko', 
-        gender: 'male',
-        geter: function(){     
-        }
-    };
-    angular.extend(des, srcs);
-    console.log(des);
-</code></pre>
+ 实现js的深拷贝。
 
+> JS深拷贝：在JS中对于数组或者对象的拷贝(赋值)后，两个对象实质上指向了同一堆地址，要想实现拷贝后两个对象中属性变化互不影响则需要js的深拷贝；
+
+浅拷贝示例：
+
+<code><pre>
+var arr1 = [1,2,3,4];
+var arr2 = arr1;
+arr2[0] = 5;
+
+console.log(arr1 === arr2);
+console.log(arr1);
+console.log(arr2);
+</pre></code> 
+
+输出：
+
+<code><pre> 
+ true 
+ [5, 2, 3, 4] 
+ [5, 2, 3, 4] 
+</pre></code>
+
+可以看到：arr1,arr2的赋值互相影响。
+
+原生实现深拷贝示例：js中通过*slice*、*concat*方法实现；
+
+<code><pre> 
+var arr1 = [1,2,3,4];
+var arr3 = arr1.slice(0);
+var arr4 = arr1.concat();
+arr3[0] = 5;
+arr4[0] = 5;
+
+console.log(arr1 === arr3);
+console.log(arr1);
+console.log(arr3);
+
+console.log(arr1 === arr4);
+console.log(arr1);
+console.log(arr4);
+</pre></code> 
+
+输出：
+
+<code><pre> 
+ false 
+ [1, 2, 3, 4] 
+ [5, 2, 3, 4] 
+ false 
+ [1, 2, 3, 4] 
+ [5, 2, 3, 4] 
+</pre></code>
+
+可以看到：arr1,arr3,arr4的赋值互不影响。
+
+AngularJS实现深拷贝示例：
+
+<code><pre> 
+var arr1 = [1,2,3,4];
+arr5 = angular.copy(arr1);
+arr5[0] = 5;
+console.log(arr1 === arr5);
+console.log(arr1);
+console.log(arr5);
+</pre></code> 
 
 输出：
 
 <code><pre>
-{
-    gender: "male",
-    geter: function (){},
-    name: "misko"
-}
+ false 
+ [1, 2, 3, 4] 
+ [5, 2, 3, 4] 
+
+</pre></code>
+
+可以看到：arr1,arr5的赋值互不影响。
+
++ angular.element
++ angular.equals
++ angular.extend
+    
+ *继承*，将src中的所有属性挂载到des对象上;
+
+<code><pre>
+var des = {};
+var srcs = {
+    name: 'misko', 
+    gender: 'male',
+    geter: function(){     
+    }
+};
+angular.extend(des, srcs);
+console.log(des);
+</pre></code>
+
+输出：
+
+<code><pre>
+{gender: "male",geter: function (){},name: "misko"}
 </pre></code>
 
 + angular.forEach
-    + 遍历对象或者数组并对每一项相应相应的操作;
+
+ 遍历对象或者数组并对每一项相应相应的操作;
 
 <code><pre>
     var values = {name: 'misko', gender: 'male'};
@@ -164,30 +341,230 @@ categories: [FE]
 </pre></code>
 
 + angular.fromJson
-+ angular.identity
-+ angular.injector
-+ angular.isArray
-+ angular.isDate
-+ angular.isDefined
-+ angular.isElement
-+ angular.isFunction
-+ angular.isNumber
-+ angular.isObject
-+ angular.isString
-+ angular.isUndefined
-+ angular.lowercase
-+ angular.mock
-+ angular.module
-    + 创建/获取模块
-    
-    > When passed two or more arguments, a new module is created.  If passed only one argument, an existing module (the name passed as the first argument to `module`) is retrieved.
-    以上为：“当传递两个及以上参数时，创建一个模块，当传递一个参数时，调用已经存在的模块！”
 
+ 将字符串转换为json对象；
+ 实现代码为：<br/>
+
+<code><pre>
+function fromJson(json) {
+    return isString(json) ? JSON.parse(json) : json;
+}
+</pre></code>
+
+使用：
+
+<code><pre>
+var jsonStr = '{"employees": [{ "firstName":"Bill" , "lastName":"Gates" },{ "firstName":"George" , "lastName":"Bush" },{ "firstName":"Thomas" , "lastName":"Carter" }]}';
+var jsonObj = angular.fromJson(jsonStr);
+
+console.log(jsonObj);
+</pre></code>
+
+从实现代码可以看到，利用了JSON.parse来实现，该方法支持IE8及以上浏览器，[详见](http://caniuse.com/#feat=json);
+
++ angular.identity
+
+ 该function返回第一个参数；
+
+<code><pre>
+function identity($) {
+    return $;
+}
+</pre></code>
+
++ angular.injector
+
+ 每一个AngularJS应用都有一个注入器(injector)<br>用来处理依赖的创建。注入器是一个负责查找和创建依赖的服务定位器。<br>
+ @param {Array}***modules*** 模块方法体或别名组成的数组列表. ‘ng’模块必须添加。<br>
+ @returns {function()} 注入器构造方法.<br>
+
+> 在某些情形中你会发现你想要创建你自己的$injector而不是使用AngularJS在引导启动时自动创建的$injector。例如，在你不想要单体service实例的单元测试中，创建一个你自己的injector是很有用的。你可以使用angular.injector方法来创建一个你自己的injector。
+
+<code><pre>
+// create an injector
+var $injector = angular.injector(['ng']);
+
+// use the injector to kick off your application
+// use the type inference to auto inject arguments, or use implicit injection
+$injector.invoke(function($rootScope, $compile, $document){
+    $compile($document)($rootScope);
+    $rootScope.$digest();
+});
+</pre></code>
+
+<p style="color:red"><strong>还需要深入研究</strong></p>
+
++ angular.isArray
+
+ 判断是否为数组。<br/>
+ 实现代码：
+    
+<code><pre>
+function isArray(value) {
+    return toString.call(value) === '[object Array]';
+}
+</pre></code>
+
+这种方式可以判断同一页面中的变量是否为数组，但不包含iframe的情形。
+
++ angular.isDate
+
+ 判断是否为日期类型。<br/>
+ 实现代码：
+
+<code><pre>
+function isDate(value) {
+    return toString.call(value) === '[object Date]';
+}
+</pre></code>
+
+实例：
+
+<code><pre>
+var date = new Date();
+var time = date.getTime();
+var myDate=new Date();
+myDate.setFullYear(2008,7,9);
+
+console.log(Date.now());//1402912337564
+console.log(date);//Mon Jun 16 2014 17:52:17 GMT+0800 (澳大利亚西部标准时间) 
+console.log(myDate);//Sat Aug 09 2008 17:52:17 GMT+0800 (澳大利亚西部标准时间) 
+
+console.log(angular.isDate(Date.now()));//false
+console.log(angular.isDate(time));//false
+console.log(angular.isDate(date));//true
+console.log(angular.isDate(date));//true
+</pre></code>
+
+注意：Date.now()返回毫秒数，所以不是日期类型。
+
++ angular.isDefined
+
+ 判断基本类型变量是否定义。
+ 代码实现：
+
+<code><pre>
+function isDefined(value) {
+    return typeof value !== 'undefined';
+}
+</pre></code>
+
++ angular.isElement
+
+ 判断是否为DOM元素。
+
+ 实例代码：
+
+<code><pre>
+console.log(angular.isElement(document));//true
+console.log(angular.isElement(document.body));//true
+console.log(angular.isElement(document.getElementById('aaa')));//true   
+</pre></code>
+
++ angular.isFunction
+
+ 判断是否为函数类型；
+
+<code><pre>
+function isFunction(value) {
+    return typeof value === 'function';
+}
+</pre></code>
+
++ angular.isNumber
+
+ 判断是否为数字类型：
+
+<code><pre>
+function isNumber(value) {
+    return typeof value === 'number';
+}    
+</pre></code>
+
++ angular.isObject
+
+ 判断是否为对象；
+
+<code><pre>
+function isObject(value) {
+    if(value != null){
+        return typeof value === 'object';
+    }else{
+        return false;
+    }
+}    
+</pre></code>
+
+ 这里排除了value == null的情况。
+
++ angular.isString
+
+ 判断是否为字符串；
+
+<code><pre>
+function isString(value) {
+    return typeof value === 'string';
+}
+</pre></code>
+
++ angular.isUndefined
+
+ 与isDefined返回值相反；
+
+<code><pre>
+function isUndefined(value) {
+    return typeof value === 'undefined';
+}
+</pre></code>
+
++ angular.lowercase
+
+ 将字符串所有字符转换为小写；
+
+<code><pre>
+var lowercase = function(string) {
+    return isString(string) ? string.toLowerCase() : string;
+};
+</pre></code>
+
++ angular.mock
+
+ 用于测试。
+
++ angular.module
+   
+ *创建/获取模块*:  
+ When passed two or more arguments, a new module is created.  If passed only one argument, an existing module (the name passed as the first argument to `module`) is retrieved.<br/>
+ 以上为：“当传递两个及以上参数时，创建一个模块，当传递一个参数时，调用已经存在的模块！”
 
 + angular.noop
+
+一个空函数，在编写代码时使用；
+
+<code><pre>
+  function noop() {}
+</pre></code>
+
 + angular.toJson
+
+ 将对象、数组、string、number等转换成json字符串，当未定义时返回undefine;
+
+<code><pre>
+function toJson(obj, pretty) {
+    if (typeof obj === 'undefined')
+        return undefined;
+    return JSON.stringify(obj, toJsonReplacer, pretty ? '  ' : null);
+}
+</pre></code>
+
 + angular.uppercase
+
+ 将字符串的所有字符大写输出；
+
 + angular.version
+
+ angular的版本号；
+
 + module
 
 
@@ -240,4 +617,4 @@ categories: [FE]
 
 
 ---------------------
-edit by jeosea at 2014.06.10
+edit by jeosea at 2014.06.18
