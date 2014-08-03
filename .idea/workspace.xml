@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d86df95c-2301-45d4-ba7a-824c415d05dc" name="Default" comment="">
+      <change type="DELETED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-04-09-定个计划，使浮躁的心情平静下来.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2014\FE-Absctract-2" afterPath="" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-02-利用flash-builder-for-php简化flex和php开发.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-02-Simplified-by-flash-builder-for-php-flex-and-PHP-development.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-07-为通过flashcatalyst设计的网页提速优化的方法.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-07-Through-the-method-Webpage-speed-optimized-flashcatalyst-design.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-09-FlashBuilder4.5创建的项目在导入FlashBuilder4.6后报错的处理.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-09-Projects-created-in-FlashBuilder4.5-after-introducing-FlashBuilder4.6-error-reporting.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-13-关于拖动缓动效果的实现.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-13-A-slow-to-realize-the-dynamic-effect-of-drag.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-16-又是一年跳槽时.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-16-It-is-a-year-job-hopping.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-18-WordpressSEO优化.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-18-WordpressSEO-optimization.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-19-插件必将消亡.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-19-The-future-is-not-plug-in-front-End.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-22-Android能否引领移动互联网革命.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-22-Android-can-lead-the-mobile-Internet-revolution.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-22-Flex开发移动应用中xx-app.xml的配置.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-22- Flex-development-in-mobile-application-configuration.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-22-移动开发中HTML5能否替代本地程序.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-22-In-the-development-of-HTML5-mobile-can-replace-local-program.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-24-利用Away3D4和Stage3D创建3D游戏以及应用程序.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-24-Creating-3D-games-and-applications-using-the-Away3D-4-and-Stage3D.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-27-Starling框架学习总结一.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-27-Starling-framework-for-learning-summary-1.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-27-Starling框架学习总结二.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-27-Starling-framework-for-learning-summary-2.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-28-Starling框架学习总结三.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-28-Starling-framework-for-learning-summary-3.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-02-28-Starling框架学习总结四.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-02-28-Starling-framework-for-learning-summary-4.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-03-02-Flex与后台语言的数据通信.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-03-02-The-data-communication-between-Flex-and-background-language.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-03-07-FlashPlayer11.2，Air3.2鼠标事件新属性试玩.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-03-07-FlashPlayer11.2-Air3.2-mouse-event-properties.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-03-08-Flex4设置ToolTip样式.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-03-08-Flex4-set-up-a-ToolTip-style.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-03-13-Air3.2RC版试用Away3D-4.0beta版开发移动端3D程序.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-03-13-The-Air3.2RC-trial-Away3D-4.0beta-version-of-the-development-of-mobile-terminal-3D-program.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-03-13-由两点坐标计算角度算法：象限分割法.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-03-13-Calculates-the-angle-algorithm-consists-of-the-coordinates-of-the-two-points-quadrant-segmentation-method.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-03-15-位图使用.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-03-15-Bitmap-using.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-03-15-关于跳槽.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-03-15-About-the-job.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-03-22-通过BitMap截取SWF文件中的部分内容渲染在Flash中.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-03-22-Through-the-BitMap-intercept-SWF-part-of-the-contents-of-the-file-to-render-in-Flash.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-04-05-Flex4中通过Path的Data属性画曲线相关说明.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-04-05-Flex4-through-Data-attributes-that-draw-curve-of-Path.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-04-06-Flex中载入-嵌入外部资源比较.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-04-06-Flex-in-the-loading-and-embedding-external-resources.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-04-19-Flex中UIComponent的生命周期.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-04-19-In-the-life-cycle-of-UIComponent-Flex.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-04-27-GIS中的空间参考系和投影坐标系统区别详解.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-04-27-Explain-the-difference-between-spatial-reference-system-and-coordinate-system-in-GIS.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-05-14-Stage3D-AGAL中的顶点变换运算解析.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-05-14-Operation-analysis-of-vertex-transformations-in-Stage3D-AGAL.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-05-14-爨底下-双龙峡两日游记.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-05-14-CUANDIXIA-SHUANGLONGXIA-jeoner.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-05-17-jQuery学习笔记之一.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-05-17-One-of-the-jQuery-learning-notes-1.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-05-17-jQuery学习笔记之二.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-05-17-One-of-the-jQuery-learning-notes-2.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-06-28-主组件不能监听ItemRender中派发的事件的处理方法.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-06-28-Processing-method-of-main-component-can-not-monitor-the-distributed-events-in-ItemRender.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-07-02-碎碎念一.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-07-02-witter-1.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-07-11-笔记本共享无线网络给手机方法.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-07-11-The-wireless-network-to-the-mobile-phone-notebook-sharing-method.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-09-21-Spark组件中的滚动条组件用法.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-09-21-Spark-components-in-the-scroll-bar-component-usage.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-09-26-cookie-Cookie 用法解析之---Cookie与Flash无关？.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-09-26-Cookie-and-Flash-Cookie-usage-analysis-of-independent.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-09-27-OpenLayers2.12学习教程之命名空间.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-09-27-Learning-OpenLayers2.12-tutorial-namespace.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-09-28-OpenLayers2.12学习教程之原型链和继承(1).md" afterPath="$PROJECT_DIR$/_posts/2012/2012-09-28-OpenLayers2.12-tutorial-prototype-chain-and-inheritance-1.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-09-29-合理利用冒泡机制，提高程序运行效率.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-09-29-Rational-use-of-bubbling-mechanism-to-improve-the-operational-efficiency-of-the-program.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-10-08-JS中的navigator对象.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-10-08-The-JS-Navigator-object.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2012-11-29-通过媒体查询设置不同不同设备页面布局.md" afterPath="$PROJECT_DIR$/_posts/2012/2012-11-29-Through-the-media-query-set-different-equipment-layout.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2013-03-31-2013年的年度计划.md" afterPath="$PROJECT_DIR$/_posts/2012/2013-03-31-The-2013-annual-plan.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2012\2013-04-03-OpenLayers学习教程之多重继承.md" afterPath="$PROJECT_DIR$/_posts/2012/2013-04-03-OpenLayers-tutorial-learning-multiple-inheritance.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2013\2013-03-25-关于地理信息系统(GIS)与遥感(RS)的一些想法.md" afterPath="$PROJECT_DIR$/_posts/2013/2013-03-25-GIS-and-RS)-some-of-the-ideas.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2013\2013-03-25-北斗导航卫星与GPS的区别及一些适用场景.md" afterPath="$PROJECT_DIR$/_posts/2013/2013-03-25-The-difference-of-Beidou-navigation-satellite-and-GPS-and-some-application-scenarios.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2014\2014-02-14-PHP与JS时间戳区别.md" afterPath="$PROJECT_DIR$/_posts/2014/2014-02-14-Time-stamp-difference-between-PHP-and-JS.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2014\2014-02-25-Array数据类型判断.md" afterPath="$PROJECT_DIR$/_posts/2014/2014-02-25-The-Array-data-type-judgment.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2014\2014-02-25-我的网为什么越来越慢了.md" afterPath="$PROJECT_DIR$/_posts/2014/2014-02-25-Why-is-my-network-more-and-more-slowly.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2014\2014-03-05-闭包的两个常用应用场景.md" afterPath="$PROJECT_DIR$/_posts/2014/2014-03-05-Two-common-scene-closure.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2014\2014-03-06-自己倒腾静态文本博客记.md" afterPath="$PROJECT_DIR$/_posts/2014/2014-03-06-Around-the-static-text-blog.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2014\2014-03-07-缘起北京，梦回成都.md" afterPath="$PROJECT_DIR$/_posts/2014/2014-03-07-Origin-of-Beijing-and-back-to-Chengdu.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2014\2014-03-07-自己倒腾静态文本博客记-导入wordpress博文.md" afterPath="$PROJECT_DIR$/_posts/2014/2014-03-07-Around-the-static-text-blog-Import-WordPress-blog.md" />
+      <change type="MOVED" beforePath="E:\Study\GitHub\guoguogis.github.io\_posts\2014\2014-06-06-Markdown中让代码高亮的写法.md" afterPath="$PROJECT_DIR$/_posts/2014/2014-06-06-Writing-to-highlight-the code-in-Markdown.md" />
+    </list>
+    <ignored path="guoguogis.github.io.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="guoguogis.github.io" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="2012-01-13-hello-world.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2012/2012-01-13-hello-world.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="464">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2012-02-24-Creating-3D-games-and-applications-using-the-Away3D-4-and-Stage3D.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2012/2012-02-24-Creating-3D-games-and-applications-using-the-Away3D-4-and-Stage3D.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.357143" vertical-offset="108" max-vertical-offset="783">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2012-03-08-Flex4-set-up-a-ToolTip-style.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2012/2012-03-08-Flex4-set-up-a-ToolTip-style.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5099846" vertical-offset="1872" max-vertical-offset="2523">
+              <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/_posts/2012/2012-02-24-Creating-3D-games-and-applications-using-the-Away3D-4-and-Stage3D.md" />
+        <option value="$PROJECT_DIR$/_posts/2012/2012-02-27-Starling-framework-for-learning-summary-2.md" />
+        <option value="$PROJECT_DIR$/_posts/2012/2012-03-02-The-data-communication-between-Flex-and-background-language.md" />
+        <option value="$PROJECT_DIR$/_posts/2012/2012-03-08-Flex4-set-up-a-ToolTip-style.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2012" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guoguogis.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2011" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d86df95c-2301-45d4-ba7a-824c415d05dc" name="Default" comment="" />
+      <created>1407036681745</created>
+      <updated>1407036681745</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31664315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/_posts/2014/2014-03-05-Two-common-scene-closure.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2059">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012/2012-02-19-The-future-is-not-plug-in-front-End.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0714285" vertical-offset="0" max-vertical-offset="3045">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012/2012-03-22-Through-the-BitMap-intercept-SWF-part-of-the-contents-of-the-file-to-render-in-Flash.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1276">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014/2014-03-06-Around-the-static-text-blog.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2494">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014/2014-02-14-Time-stamp-difference-between-PHP-and-JS.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16860466" vertical-offset="0" max-vertical-offset="688">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012/2012-01-13-hello-world.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="464">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012/2012-02-02-Simplified-by-flash-builder-for-php-flex-and-PHP-development.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.357142" vertical-offset="0" max-vertical-offset="2407">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012/2012-02-07-Through-the-method-Webpage-speed-optimized-flashcatalyst-design.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="696">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012/2012-02-09-Projects-created-in-FlashBuilder4.5-after-introducing-FlashBuilder4.6-error-reporting.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012/2012-02-13-A-slow-to-realize-the-dynamic-effect-of-drag.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012/2012-02-16-It-is-a-year-job-hopping.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="841">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012/2012-02-24-Creating-3D-games-and-applications-using-the-Away3D-4-and-Stage3D.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.357143" vertical-offset="108" max-vertical-offset="783">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tmp.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39307228" vertical-offset="0" max-vertical-offset="664">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/should-begin-now.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="696">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/new.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="664">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/example.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.78187406" vertical-offset="509" max-vertical-offset="1421">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012/2012-03-08-Flex4-set-up-a-ToolTip-style.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5099846" vertical-offset="1872" max-vertical-offset="2523">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
