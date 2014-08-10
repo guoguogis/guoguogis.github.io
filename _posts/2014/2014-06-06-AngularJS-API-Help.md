@@ -14,20 +14,20 @@ categories: [FE]
 
  htmlAnchorDirective:修改html的a元素，当herf为空时，禁止了默认的操作；
 
-<code><pre>
-&lt;div&gt;
-    &lt;a href=""&gt;默认a&lt;/a&gt;
-&lt;/div&gt;
-&lt;div ng-app&gt;
-    &lt;a href=""&gt;angularJS-a&lt;/a&gt;
-&lt;/div&gt;
-</pre></code>
+{% highlight HTML%}
+<div>
+    <a href="">默认a</a>
+</div>
+<div ng-app>
+    <a href="">angularJS-a</a>
+</div>
+{% endhighlight %}
 
  “默认a”标签在点击时会刷新页面,“angularJS-a”标签不进行刷新,使得在AngularJS定义的作用域中使用:
 
-<code><pre>
-&lt;a href="" ng-click="list.addItem()"&gt;Add Item&lt;/a&gt;
-</pre></code>
+{% highlight HTML%}
+<a href="" ng-click="list.addItem()">Add Item</a>
+{% endhighlight %}
 
 来创建动作链接。
 
@@ -142,7 +142,7 @@ categories: [FE]
  @param {arguments...} 方法所调用的可选参数;<br/>
  @returns {function()} 返回方法的指定执行;<br/>
 
-<code><pre>
+{% highlight javascript%}
 var obj = { 
     name: 'A nice demo', 
     fx: function() { 
@@ -161,11 +161,11 @@ var fx3 = obj.fx.bind(obj);
 runFx(obj.fx); 
 runFx(fx2); //a nice demo
 runFx(fx3); //a nice demo
-</pre></code>
+{% endhighlight %}
 
 输出结果：
 
-<code><pre>
+ 
 Window {top: Window, window: Window, location: Location, external: Object, chrome: Object…}
 I am such a beautiful window!
 
@@ -174,7 +174,7 @@ A nice demo
 
 Object {name: "A nice demo", fx: function}
 A nice demo 
-</pre></code>
+
 
  ECMAScript5也提供了bind原生方法，fx3为原生*bind*方法设置函数的执行上下文，目前该原生方法不支持IE6,7,8;<br/>
  jQuery,protorype中都提供了类似方法.<br/>
@@ -191,7 +191,7 @@ A nice demo
     strictDi: 禁用了function的注释.<br/>
  @returns {auto.$injector} 返回一个最新创建的injector.<br/>
 
-<code class="html"><pre>
+
 &lt;!doctype html&gt;
 &lt;html lang="zh"&gt;
 &lt;head&gt;
@@ -212,7 +212,7 @@ A nice demo
         &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</pre></code>   
+  
 
 > note:这里是手动启动angular,所以不能用ng-app指令，否则报错。
 
@@ -224,7 +224,7 @@ A nice demo
 
 浅拷贝示例：
 
-<code><pre>
+{% highlight javascript%}
 var arr1 = [1,2,3,4];
 var arr2 = arr1;
 arr2[0] = 5;
@@ -232,21 +232,21 @@ arr2[0] = 5;
 console.log(arr1 === arr2);
 console.log(arr1);
 console.log(arr2);
-</pre></code> 
+{% endhighlight %}
 
 输出：
 
-<code><pre> 
+
  true 
  [5, 2, 3, 4] 
  [5, 2, 3, 4] 
-</pre></code>
+
 
 可以看到：arr1,arr2的赋值互相影响。
 
 原生实现深拷贝示例：js中通过*slice*、*concat*方法实现；
 
-<code><pre> 
+{% highlight javascript%}
 var arr1 = [1,2,3,4];
 var arr3 = arr1.slice(0);
 var arr4 = arr1.concat();
@@ -260,40 +260,39 @@ console.log(arr3);
 console.log(arr1 === arr4);
 console.log(arr1);
 console.log(arr4);
-</pre></code> 
+{% endhighlight %} 
 
 输出：
 
-<code><pre> 
+
  false 
  [1, 2, 3, 4] 
  [5, 2, 3, 4] 
  false 
  [1, 2, 3, 4] 
  [5, 2, 3, 4] 
-</pre></code>
+
 
 可以看到：arr1,arr3,arr4的赋值互不影响。
 
 AngularJS实现深拷贝示例：
 
-<code><pre> 
+{% highlight javascript%}
 var arr1 = [1,2,3,4];
 arr5 = angular.copy(arr1);
 arr5[0] = 5;
 console.log(arr1 === arr5);
 console.log(arr1);
 console.log(arr5);
-</pre></code> 
+{% endhighlight %}
 
 输出：
 
-<code><pre>
+
  false 
  [1, 2, 3, 4] 
  [5, 2, 3, 4] 
 
-</pre></code>
 
 可以看到：arr1,arr5的赋值互不影响。
 
@@ -303,7 +302,7 @@ console.log(arr5);
     
  *继承*，将src中的所有属性挂载到des对象上;
 
-<code><pre>
+{% highlight javascript%}
 var des = {};
 var srcs = {
     name: 'misko', 
@@ -313,52 +312,52 @@ var srcs = {
 };
 angular.extend(des, srcs);
 console.log(des);
-</pre></code>
+{% endhighlight %}
 
 输出：
 
-<code><pre>
+
 {gender: "male",geter: function (){},name: "misko"}
-</pre></code>
+
 
 + angular.forEach
 
  遍历对象或者数组并对每一项相应相应的操作;
 
-<code><pre>
+{% highlight javascript%}
     var values = {name: 'misko', gender: 'male'};
     var log = [];
     angular.forEach(values, function(value, key){
        this.push(key + ': ' + value);
     }, log);
-</pre></code>
+{% endhighlight %}
 
 输出结果为:
 
-<code><pre>
+
 ["name:misko",
 "gender:male"]
-</pre></code>
+
 
 + angular.fromJson
 
  将字符串转换为json对象；
  实现代码为：<br/>
 
-<code><pre>
+{% highlight javascript%}
 function fromJson(json) {
     return isString(json) ? JSON.parse(json) : json;
 }
-</pre></code>
+{% endhighlight %}
 
 使用：
 
-<code><pre>
+{% highlight javascript%}
 var jsonStr = '{"employees": [{ "firstName":"Bill" , "lastName":"Gates" },{ "firstName":"George" , "lastName":"Bush" },{ "firstName":"Thomas" , "lastName":"Carter" }]}';
 var jsonObj = angular.fromJson(jsonStr);
 
 console.log(jsonObj);
-</pre></code>
+{% endhighlight %}
 
 从实现代码可以看到，利用了JSON.parse来实现，该方法支持IE8及以上浏览器，[详见](http://caniuse.com/#feat=json);
 
@@ -366,11 +365,11 @@ console.log(jsonObj);
 
  该function返回第一个参数；
 
-<code><pre>
+{% highlight javascript%}
 function identity($) {
     return $;
 }
-</pre></code>
+{% endhighlight %}
 
 + angular.injector
 
@@ -380,7 +379,7 @@ function identity($) {
 
 > 在某些情形中你会发现你想要创建你自己的$injector而不是使用AngularJS在引导启动时自动创建的$injector。例如，在你不想要单体service实例的单元测试中，创建一个你自己的injector是很有用的。你可以使用angular.injector方法来创建一个你自己的injector。
 
-<code><pre>
+{% highlight javascript%}
 // create an injector
 var $injector = angular.injector(['ng']);
 
@@ -390,7 +389,7 @@ $injector.invoke(function($rootScope, $compile, $document){
     $compile($document)($rootScope);
     $rootScope.$digest();
 });
-</pre></code>
+{% endhighlight %}
 
 <p style="color:red"><strong>还需要深入研究</strong></p>
 
@@ -399,11 +398,11 @@ $injector.invoke(function($rootScope, $compile, $document){
  判断是否为数组。<br/>
  实现代码：
     
-<code><pre>
+{% highlight javascript%}
 function isArray(value) {
     return toString.call(value) === '[object Array]';
 }
-</pre></code>
+{% endhighlight %}
 
 这种方式可以判断同一页面中的变量是否为数组，但不包含iframe的情形。
 
@@ -412,15 +411,15 @@ function isArray(value) {
  判断是否为日期类型。<br/>
  实现代码：
 
-<code><pre>
+{% highlight javascript%}
 function isDate(value) {
     return toString.call(value) === '[object Date]';
 }
-</pre></code>
+{% endhighlight %}
 
 实例：
 
-<code><pre>
+{% highlight javascript%}
 var date = new Date();
 var time = date.getTime();
 var myDate=new Date();
@@ -434,7 +433,7 @@ console.log(angular.isDate(Date.now()));//false
 console.log(angular.isDate(time));//false
 console.log(angular.isDate(date));//true
 console.log(angular.isDate(date));//true
-</pre></code>
+{% endhighlight %}
 
 注意：Date.now()返回毫秒数，所以不是日期类型。
 
@@ -443,11 +442,11 @@ console.log(angular.isDate(date));//true
  判断基本类型变量是否定义。
  代码实现：
 
-<code><pre>
+{% highlight javascript%}
 function isDefined(value) {
     return typeof value !== 'undefined';
 }
-</pre></code>
+{% endhighlight %}
 
 + angular.isElement
 
@@ -455,37 +454,37 @@ function isDefined(value) {
 
  实例代码：
 
-<code><pre>
+{% highlight javascript%}
 console.log(angular.isElement(document));//true
 console.log(angular.isElement(document.body));//true
 console.log(angular.isElement(document.getElementById('aaa')));//true   
-</pre></code>
+{% endhighlight %}
 
 + angular.isFunction
 
  判断是否为函数类型；
 
-<code><pre>
+{% highlight javascript%}
 function isFunction(value) {
     return typeof value === 'function';
 }
-</pre></code>
+{% endhighlight %}
 
 + angular.isNumber
 
  判断是否为数字类型：
 
-<code><pre>
+{% highlight javascript%}
 function isNumber(value) {
     return typeof value === 'number';
 }    
-</pre></code>
+{% endhighlight %}
 
 + angular.isObject
 
  判断是否为对象；
 
-<code><pre>
+{% highlight javascript%}
 function isObject(value) {
     if(value != null){
         return typeof value === 'object';
@@ -493,7 +492,7 @@ function isObject(value) {
         return false;
     }
 }    
-</pre></code>
+{% endhighlight %}
 
  这里排除了value == null的情况。
 
@@ -501,31 +500,31 @@ function isObject(value) {
 
  判断是否为字符串；
 
-<code><pre>
+{% highlight javascript%}
 function isString(value) {
     return typeof value === 'string';
 }
-</pre></code>
+{% endhighlight %}
 
 + angular.isUndefined
 
  与isDefined返回值相反；
 
-<code><pre>
+{% highlight javascript%}
 function isUndefined(value) {
     return typeof value === 'undefined';
 }
-</pre></code>
+{% endhighlight %}
 
 + angular.lowercase
 
  将字符串所有字符转换为小写；
 
-<code><pre>
+{% highlight javascript%}
 var lowercase = function(string) {
     return isString(string) ? string.toLowerCase() : string;
 };
-</pre></code>
+{% endhighlight %}
 
 + angular.mock
 
@@ -541,21 +540,21 @@ var lowercase = function(string) {
 
 一个空函数，在编写代码时使用；
 
-<code><pre>
+{% highlight javascript%}
   function noop() {}
-</pre></code>
+{% endhighlight %}
 
 + angular.toJson
 
  将对象、数组、string、number等转换成json字符串，当未定义时返回undefine;
 
-<code><pre>
+{% highlight javascript%}
 function toJson(obj, pretty) {
     if (typeof obj === 'undefined')
         return undefined;
     return JSON.stringify(obj, toJsonReplacer, pretty ? '  ' : null);
 }
-</pre></code>
+{% endhighlight %}
 
 + angular.uppercase
 
