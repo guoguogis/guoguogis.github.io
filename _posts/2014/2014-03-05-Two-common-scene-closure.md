@@ -23,44 +23,40 @@ tags: [闭包,javascript]
 
 ### 最常用使用场景
 
-####场景一：自执行函数，用于控制全局变量作用范围，暴露接口
-```
+####场景一：自执行函数，用于控制全局变量作用范围，暴露接
+
+{% highlight javascript%}
 (function (){
    var a = 'a'; 
    function getA(){
         return a;
    }
-
     window.Model = {
         'getA':getA
     }
 })();
-```
+{% endhighlight %}
+
 通过上面方法，可以将Model挂载到window上；
 
 ####场景二：模块化编程
-```
+{% highlight javascript%}
 var Module = (function(){
     var privateProperty = 'foo';
-
     function privateMethod(args){
         //do something
     }
-
     return {
-
         publicProperty: "",
-
         publicMethod: function(args){
             //do something
         },
-
         privitegedMethod: function(args){
             privateMethod(args);
         }
     }
 })();
-```
+{% endhighlight %}
 通过这种方式可以直接通过Module.privitegedMethod来访问privateMethod；
 
 -----------

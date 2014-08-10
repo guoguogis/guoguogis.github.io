@@ -19,50 +19,50 @@ javascript中的数据类型跟其他语言的数据类型有所不同，由于j
 
 该操作符用来检测对象的原型链是否指向构造函数的prototype对象。
 
-```
+{% highlight javascript%}
 var a = [];
 console.log(a instanceof Array);//true
-```
+{% endhighlight %}
 
 ### 通过对象的constructor
 
 可以通过对象的constructor来判断类型
 
-```
+{% highlight javascript%}
 var a = [];
 console.log(a.constructor == Array);//true
-```
+{% endhighlight %}
 
 OK,看了上面两个instanceof和constructor来判断数据类型貌似比较靠谱；但事实并非如此！
 
 举个栗子：
-```
+
+{% highlight javascript%}
 var iframe = document.createElement('iframe');
 document.body.appendChild(iframe);
 xArray = window.frames[window.frames.length-1].Array;
 var arr = new xArray(1,2,3);
 console.log(arr instanceof Array);//false
 console.log(arr.constructor === Array);//false
+{% endhighlight %}
 
-```
 上例可以看到，用instanceof和constructor来判断Array类型在不同执行上下文中也不靠谱；以下用查看对象内部属性的方式来判断是否为数组最为靠谱；
 
 ### 通过对象的内部属性判断
 
-```
+{% highlight javascript%}
 var isArray = function(arr){
     return Object.prototype.toString.call(arr) == '[object Array]';
 }
-
 console.log(isArray([]));//true
-```
+{% endhighlight %}
 
 为何如此？请看ECMA标准：
 
 >Object.prototype.toString() When the toString method is called,the follow steps are taken;
-1.Get the [[Class ]] property of the object;
-2.Gompute a string value by concatenating the three strings "[object",Result(1),and "]";
-3.Return Result(2);
+>1.Get the [[Class ]] property of the object;
+>2.Gompute a string value by concatenating the three strings "[object",Result(1),and "]";
+>3.Return Result(2);
 
 根据以上方法可以获取内部属性，然后再转化为字符串比较，以达到我们的目的。
 
@@ -72,10 +72,11 @@ console.log(isArray([]));//true
 
 
 目前Chrome V8引擎和firefox都已经支持Array.isArray这种类型检测，可以直接使用，如下：
-```
+
+{% highlight javascript%}
 var a = [];
 console.log(Array.isArray(a));//true
-```
+{% endhighlight %}
 
 -------
 
