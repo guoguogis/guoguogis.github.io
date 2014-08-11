@@ -191,27 +191,28 @@ A nice demo
     strictDi: 禁用了function的注释.<br/>
  @returns {auto.$injector} 返回一个最新创建的injector.<br/>
 
+{% highlight HTML%}
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>directive-a</title>
+    <script type="text/javascript" src="../../bin/angular1.3.0b08.js"></script>
 
-&lt;!doctype html&gt;
-&lt;html lang="zh"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;directive-a&lt;/title&gt;
-    &lt;script type="text/javascript" src="../../bin/angular1.3.0b08.js"&gt;&lt;/script&gt;
+</head>
+<body>
+    <div ng-controller="WelcomeController">{{greeting}}</div>
 
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div ng-controller="WelcomeController"&gt;{{greeting}}&lt;/div&gt;
-
-    &lt;script type="text/javascript"&gt;
+    <script type="text/javascript">
             var app = angular.module('demo', [])
             .controller('WelcomeController', function($scope) {
                 $scope.greeting = 'Welcome!';
             });
             angular.bootstrap(document, ['demo']);
-        &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+        </script>
+</body>
+</html>
+{% endhighlight %}
   
 
 > note:这里是手动启动angular,所以不能用ng-app指令，否则报错。
