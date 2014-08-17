@@ -21,27 +21,4 @@ BitmapImage 元素在其父元素的坐标空间内定义一个矩形区域，�
 
 4、由于Flex 4中不再有能设置背景图像的Canvas控件，所以要达到这种类似的效果，可以用BitmapImage来填充； 5、在移动端开发中，为了性能尽量使用BitmapImage来代替Image控件；
 
-移动端AS项目中使用代码：
 
-```
-public class MyTweenMap extends Sprite
- {
-     public function MyTweenMap()
-     {
-         super();
-         var loader:Loader = new Loader();
-         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,onLoadComplete);
-         loader.load(new URLRequest(&quot;assets/map.jpg&quot;));
-
-         stage.align = StageAlign.TOP_LEFT;
-         stage.scaleMode = StageScaleMode.NO_SCALE;
-     }
-
-     private function onLoadComplete(evt:Event):void{
-         var image:Bitmap = Bitmap(LoaderInfo(evt.target).content);
-         var iphoneList:iScrollBox = new iScrollBox(image);
-         this.addChild(iphoneList);
-
-     }
- }
-```

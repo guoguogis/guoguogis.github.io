@@ -47,20 +47,6 @@ Flex作为前端展现脚本，无法实现与后台数据库的交互，所以�
 
 在新建的站点flex_php下，创建service.php文件，并编写代码如下：
 
-```
-&lt;?php
-
-class Service
-{
-    function getResult($str)
-    {
-        return (&quot;result:&quot;.$str);
-    }
-
-}
-?&gt;
-
-```
 
 测试服务端代码：
 
@@ -70,4 +56,4 @@ class Service
 
 输入：rest,返回结果如上图所示，则说明服务代码已经创建好，并能够与flex通信了。
 
-5、开发客户端代码.
+5、开发客户端代码。

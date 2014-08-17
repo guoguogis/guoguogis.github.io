@@ -12,7 +12,7 @@ tags: [flash,php]
 
 安装完成后初始化界面如下图所示：
 
-<img title="Flash Builder for PHP 默认工作空间 " src="http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/flashbuilder/articles/streamline-flex-php-development/fig05.jpg" alt="Flash Builder for PHP 默认工作空间 " />
+<img title="Flash Builder for PHP 默认工作空间 " src="../../../../../assets/images/2012/fig05.jpg" alt="Flash Builder for PHP 默认工作空间 " />
 
 二、建立FLEX+PHP项目
 
