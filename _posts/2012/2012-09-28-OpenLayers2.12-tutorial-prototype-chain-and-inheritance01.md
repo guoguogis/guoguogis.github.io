@@ -37,7 +37,8 @@ Javasript中有两个特殊的对象：Object和Function，他们都是构造函
 
 这三类对象中每一类都有一个_proto_属性，它指向该对象的原型，从任何对象沿着它开始遍历都可以追溯到Object.prototype。构造函数对象有prototype属性，只想一个原型对象，通过该构造函数创建对象时，被创建的对象的_proto_属性只想构造函数的prototype属性。
 
-<a href="http://www.gisthink.com/blog/guoguogis/wp-content/uploads/2012/09/11.png"><img class="alignnone size-medium wp-image-426" title="1" src="http://www.gisthink.com/blog/guoguogis/wp-content/uploads/2012/09/11-300x119.png" alt="" width="300" height="119" /></a>
+![png01](http://www.gisthink.com/blog/guoguogis/wp-content/uploads/2012/09/11-300x119.png)
+
 
 如上图所示，person2对象是Person对象通过new构造的用户自定义对象，所以person2中的_proto_指向了Person对象的prototype属性，并且constuctor指向了该构造对象的构造函数，如这里的Person()。
 

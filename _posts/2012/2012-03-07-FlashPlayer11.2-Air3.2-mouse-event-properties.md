@@ -37,12 +37,12 @@ tags: [flash]
 
 首先，在MouseEvent中引入了右键单击和中键单击的新事件：
 
-[code]
+{% highlight as3%}
 
 stage.addEventListener(MouseEvent.RIGHT_CLICK, onRightClickNow);
  stage.addEventListener(MouseEvent.MIDDLE_CLICK, onMiddleClick);
 
-[/code]
+{% endhighlight %}
 
 只要侦听了鼠标右键，即右键菜单自动隐藏。
 

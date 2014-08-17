@@ -13,7 +13,7 @@ Flex 4中引入了Spark组件，即所有继承自SkinableComponent的类都可�
 
 这里就简要介绍一下通过Path的Data属性来画曲线的方法：
 
-<a href="http://www.gisthink.com/blog/guoguogis/wp-content/uploads/2012/04/曲线.jpg"><img class="alignnone size-medium wp-image-279" title="曲线" src="http://www.gisthink.com/blog/guoguogis/wp-content/uploads/2012/04/曲线-300x157.jpg" alt="" width="300" height="157" /></a>
+![png01](http://www.gisthink.com/blog/guoguogis/wp-content/uploads/2012/04/曲线-300x157.jpg)
 
 如上图所示，当从A点开始向C点画绿色曲线时，控制点为A、D；
 

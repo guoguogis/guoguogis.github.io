@@ -13,13 +13,13 @@ tags: [Scroller]
 
 1、通过组件添加
 
-```
-&lt;s:Scroller width=&quot;100&quot; height=&quot;100&quot;&gt;
-     &lt;s:Group horizontalScrollPosition=&quot;50&quot; verticalScrollPosition=&quot;50&quot;&gt;
-&lt;mx:Image width=&quot;300&quot; height=&quot;400&quot; source=&quot;@Embed(source='assets/logo.jpg')&quot;/&gt;
-     &lt;/s:Group&gt;
-&lt;/s:Scroller&gt;
-```
+{% highlight html%}
+<s:Scroller width="100" height="100">;
+     <s:Group horizontalScrollPosition="50" verticalScrollPosition="50">
+        <mx:Image width="300" height="400" source="@Embed(source='assets/logo.jpg')">
+     </s:Group>
+</s:Scroller>
+{% endhighlight %}
 
 2、通过代码添加
 
@@ -27,9 +27,9 @@ tags: [Scroller]
 
 代码为:
 
-```
+{% highlight as%}
 var p:Panel = new Panel();
 var sc:Scroller = new Scroller();
 panel.addElement(sc);
 sc.viewport = visualElement as IViewport;
-```
+{% endhighlight %}

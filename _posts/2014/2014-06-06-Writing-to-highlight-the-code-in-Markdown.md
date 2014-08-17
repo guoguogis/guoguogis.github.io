@@ -13,6 +13,8 @@ comments: true
 
 ### pre>code写法
 
+{% highlight javascript%}
+
 <pre><code class="javascript">
 IBaseTag.getILabeltext = function (id) {
     tempid = id + "_span";
@@ -20,7 +22,11 @@ IBaseTag.getILabeltext = function (id) {
 };
 </code></pre>
 
+{% endhighlight %}
+
 ### 符号包括写法
+
+{% highlight javascript%}
 
 ```javascript
 getILabeltext = function (id) {
@@ -28,6 +34,8 @@ getILabeltext = function (id) {
     return $("#" + tempid).attr("text");
 };
 ```
+
+{% endhighlight %}
 
 可以看到第一种只是将代码包裹起来了，并没有高亮；
 第二种却将代码的关键字高亮显示了，在博客中目前不能正常解析w。

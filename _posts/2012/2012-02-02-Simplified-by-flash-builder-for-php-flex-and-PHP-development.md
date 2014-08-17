@@ -38,40 +38,40 @@ tags: [flash,php]
 
 新建完项目之后，在服务端创建文件：AuthorsService.php
 
-[code lang="php"]
- &lt;?php
+{% highlight php%}
+ <?php
  class AuthorsService {
-public function getData() {
-//in a real world application you would use a database
-//and return the result set for example
-$ret = array();
-           $ret[] = array('id'=&gt;1, 'firstname' =&gt; 'Dantes', 'lastname' =&gt; 'Aligherie');
-$ret[] = array('id'=&gt;2, 'firstname' =&gt; 'Niccolo', 'lastname' =&gt; 'Machiavelli');
-$ret[] = array('id'=&gt;3, 'firstname' =&gt; 'William', 'lastname' =&gt; 'Shakespeare');
-$ret[] = array('id'=&gt;4, 'firstname' =&gt; 'Kevin', 'lastname' =&gt; 'Hoyt');
-$ret[] = array('id'=&gt;5, 'firstname' =&gt; 'Paul', 'lastname' =&gt; 'Trani');
-$ret[] = array('id'=&gt;6, 'firstname' =&gt; 'Renaun', 'lastname' =&gt; 'Erickson');
-$ret[] = array('id'=&gt;7, 'firstname' =&gt; 'Ryan', 'lastname' =&gt; 'Stewart');
-$ret[] = array('id'=&gt;8, 'firstname' =&gt; 'Mark', 'lastname' =&gt; 'Doherty');
-$ret[] = array('id'=&gt;9, 'firstname' =&gt; 'Mihai', 'lastname' =&gt; 'Corlan');
-$ret[] = array('id'=&gt;10, 'firstname' =&gt; 'Terry', 'lastname' =&gt; 'Ryan');
-           return $ret;
-  }
-  //update the entry
-  public function updateData($author) {
-return $author;
-  }
-  //add a new entry
- public function addData($author) {
-return $author;
- }
-  //delete the entry
-public function deleteData($author) {
-return $author;
- }
+    public function getData() {
+        //in a real world application you would use a database
+        //and return the result set for example
+        $ret = array();
+        $ret[] = array('id'=&gt;1, 'firstname' =&gt; 'Dantes', 'lastname' =&gt; 'Aligherie');
+        $ret[] = array('id'=&gt;2, 'firstname' =&gt; 'Niccolo', 'lastname' =&gt; 'Machiavelli');
+        $ret[] = array('id'=&gt;3, 'firstname' =&gt; 'William', 'lastname' =&gt; 'Shakespeare');
+        $ret[] = array('id'=&gt;4, 'firstname' =&gt; 'Kevin', 'lastname' =&gt; 'Hoyt');
+        $ret[] = array('id'=&gt;5, 'firstname' =&gt; 'Paul', 'lastname' =&gt; 'Trani');
+        $ret[] = array('id'=&gt;6, 'firstname' =&gt; 'Renaun', 'lastname' =&gt; 'Erickson');
+        $ret[] = array('id'=&gt;7, 'firstname' =&gt; 'Ryan', 'lastname' =&gt; 'Stewart');
+        $ret[] = array('id'=&gt;8, 'firstname' =&gt; 'Mark', 'lastname' =&gt; 'Doherty');
+        $ret[] = array('id'=&gt;9, 'firstname' =&gt; 'Mihai', 'lastname' =&gt; 'Corlan');
+        $ret[] = array('id'=&gt;10, 'firstname' =&gt; 'Terry', 'lastname' =&gt; 'Ryan');
+        return $ret;
+    }
+    //update the entry
+    public function updateData($author) {
+        return $author;
+    }
+    //add a new entry
+    public function addData($author) {
+        return $author;
+    }
+    //delete the entry
+    public function deleteData($author) {
+        return $author;
+    }
 }
-?&gt;
-[/code]
+?>
+{% endhighlight %}
 
 好了，由于FlashBuilder for PHP注册码比较难找，这里贴上一个：
 1499-4181-9296-6452-2998-3656
