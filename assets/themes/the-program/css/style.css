@@ -46,7 +46,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0px 1px;
+  overflow-x:hidden;
   font-size: 1em;
   line-height: 1.4;
   -webkit-tap-highlight-color: rgba(255, 0, 0, 0.62);
