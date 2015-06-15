@@ -8,38 +8,18 @@
   <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <title>VR3DGIS</title>
-  <script src="Build/Cesium/Cesium.js"></script>
+  <script src="./Build/Cesium/Cesium.js"></script>
   <style>
-      @import url(Build/Cesium/Widgets/widgets.css);
+      @import url(./Build/Cesium/Widgets/widgets.css);
       html, body, #cesiumContainer {
           width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
       }
   </style>
 </head>
 <body>
-  <div id="cesiumContainer"></div>
-  <script>
-    var viewer = new Cesium.Viewer('cesiumContainer', {
-    imageryProvider : new Cesium.BingMapsImageryProvider({
-        url : 'http://dev.virtualearth.net'
-    }),
-    baseLayerPicker : false,
-    animation:false, //动画控制不显示
-     geocoder:false,//地名查找不显示
-     timeline:false,//时间线不显示
-     sceneModePicker:true,//投影方式显示
-	 homeButton:false,
-});
-
-var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
-    url : 'https://assets.agi.com/stk-terrain/world',
-    requestWaterMask : true,
-    requestVertexNormals : true
-});
-viewer.terrainProvider = cesiumTerrainProviderMeshes;
-viewer.cesiumWidget.cesiumLogo = "logo.png";
-viewer.camera.lookAt(Cesium.Cartesian3.fromDegrees(107.969, 30.19), new Cesium.Cartesian3(0.0, 0.0, 20000000.0));
-  viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
+  <div id="cesiumContainer">
+  </div>
+  <script src="./js/main.js">  
   </script>
 </body>
 </html>

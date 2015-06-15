@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="province" id="province">
+	<SimpleField name="AREA" type="float"></SimpleField>
+	<SimpleField name="PERIMETER" type="float"></SimpleField>
+	<SimpleField name="RES1_4M_" type="float"></SimpleField>
+	<SimpleField name="RES1_4M_ID" type="float"></SimpleField>
+	<SimpleField name="GBCODE" type="int"></SimpleField>
+	<SimpleField name="ADCODE93" type="int"></SimpleField>
+	<SimpleField name="ADCODE99" type="int"></SimpleField>
+	<SimpleField name="ADCLASS" type="int"></SimpleField>
+	<SimpleField name="PINYIN" type="string"></SimpleField>
+</Schema>
+<Folder><name>province</name>
+  <Placemark>
+	<name>北京</name>
+      <Point><coordinates>116.38094329833984,39.923614501953125</coordinates></Point>
+	  <description><![CDATA[<a href="http://www.baidu.com">百度查询</a>]]></description>
+  </Placemark>
+  <Placemark>
+	<name>天津</name>
+      <Point><coordinates>117.20349884033203,39.131118774414062</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>石家庄</name>
+      <Point><coordinates>114.48977661132812,38.045127868652344</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>呼和浩特</name>
+      <Point><coordinates>111.66329956054687,40.820941925048828</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>沈阳</name>
+      <Point><coordinates>123.41168212890625,41.796615600585938</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>长春</name>
+      <Point><coordinates>125.3154296875,43.892562866210938</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>哈尔滨</name>
+      <Point><coordinates>126.64334106445313,45.741493225097656</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>上海</name>
+      <Point><coordinates>121.46926879882812,31.238176345825195</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>南京</name>
+      <Point><coordinates>118.77278137207031,32.047615051269531</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>杭州</name>
+      <Point><coordinates>120.15924835205078,30.265995025634766</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>合肥</name>
+      <Point><coordinates>117.27570343017578,31.863254547119141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>福州</name>
+      <Point><coordinates>119.29781341552734,26.078590393066406</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>南昌</name>
+      <Point><coordinates>115.89991760253906,28.675991058349609</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>济南</name>
+      <Point><coordinates>117.00559997558594,36.667072296142578</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>郑州</name>
+      <Point><coordinates>113.65004730224609,34.757034301757813</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>武汉</name>
+      <Point><coordinates>114.29193878173828,30.567514419555664</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>长沙</name>
+      <Point><coordinates>112.98126983642578,28.200824737548828</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>广州</name>
+      <Point><coordinates>113.26142883300781,23.118911743164063</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>南京</name>
+      <Point><coordinates>108.311767578125,22.806543350219727</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>海口</name>
+      <Point><coordinates>110.34651184082031,20.031793594360352</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>成都</name>
+      <Point><coordinates>104.08175659179687,30.661056518554688</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>重庆</name>
+      <Point><coordinates>106.51033782958984,29.558176040649414</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>贵阳</name>
+      <Point><coordinates>106.71137237548828,26.576873779296875</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>昆明</name>
+      <Point><coordinates>102.70456695556641,25.043844223022461</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>拉萨</name>
+      <Point><coordinates>91.132049560546875,29.657588958740234</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>西安</name>
+      <Point><coordinates>108.94902801513672,34.261684417724609</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>兰州</name>
+      <Point><coordinates>103.75005340576172,36.068038940429688</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>西宁</name>
+      <Point><coordinates>101.78745269775391,36.609447479248047</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>银川</name>
+      <Point><coordinates>106.27194213867187,38.468009948730469</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>乌鲁木齐</name>
+      <Point><coordinates>87.606117248535156,43.790939331054688</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>台北</name>
+      <Point><coordinates>121.5142822265625,25.049127578735352</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>澳门</name>
+      <Point><coordinates>113.55005645751953,22.200796127319336</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>香港</name>
+      <Point><coordinates>114.15440368652344,22.280685424804688</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>太原</name>
+      <Point><coordinates>112.56935119090456,37.871112830392583</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
