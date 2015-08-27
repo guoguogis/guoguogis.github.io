@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 不要在常量和变量中出现易混淆的字母
-date: 2014-09-15
+date: 2014-08-27
 author: guoguogis
 comments: true
 categories: [java]
