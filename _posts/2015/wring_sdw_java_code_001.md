@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: post
 title: 不要在常量和变量中出现易混淆的字母
-tagline: Supporting tagline
-tags: [java]
-categories: [java]
+date: 2014-09-15
+author: guoguogis
 comments: true
-
+categories: [java]
+tags: [java]
 ---
 {% include JB/setup %}
 ----------
