@@ -10,7 +10,7 @@ tags: [java]
 {% include JB/setup %}
 ----------
 
-在java的命名规则中，包名犬小写，类首字母大写，常量全部大写并用下划线分隔，变量采用驼峰命名法命名：
+在java的命名规则中，包名全小写，类首字母大写，常量全部大写并用下划线分隔，变量采用驼峰命名法命名：
 
 {% highlight java%}
     public class Client{
