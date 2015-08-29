@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: AngularJS中$watch第一个参数为函数且没有返回值的问题
 tagline: Supporting tagline
 tags: [angularjs]
