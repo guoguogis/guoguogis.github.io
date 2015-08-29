@@ -5,7 +5,6 @@ tagline: Supporting tagline
 tags: [css]
 categories: [css]
 comments: true
-破石头
 ---
 {% include JB/setup %}
 ----------
