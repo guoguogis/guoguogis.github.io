@@ -47,4 +47,106 @@ comments: true
 + 虽然前面说到不浮动的元素会占据已浮动元素的位置，但是当不浮动元素是个文本框时，其文本内容会受到浮动元素的影响，表现为“文字环绕效果”。注意：浮动定位设计的目的是达到文字环绕效果，而不是浏览器BUG。
 + 浮动元素会使包含框高度塌陷。要想使包含框恢复高度，则在浮动框之后添加一个空框用来清除浮动即可。除此之外，还可以将包含框设置为浮动。虽然为包含框设置浮动可以使包含框恢复高度，但是会影响包含框的兄弟节点的布局，所以该方法在仔细评估后使用。其他清除浮动的方法网上还有比较多的技巧，不过单纯用CSS来实现的话推荐用overflow。
 
+##### 背景图像效果-圆角
 
++ 当backgournd-position设置为百分比后，如20%，其实际意义是将图像本身距离左上角20%的点定位到父元素上距离左上角20%的位置。
++ 早期的圆角框实现：通过上下两部分图片组成，
+    上图片左上、右上角通过图片实现圆角，样式如下：
+
+{% highlight css%}
+   .box h2 {
+        background: url(img/top.gif) no-repeat left top;
+    }
+{% endhighlight %}
+
+    下图片的左下、右下通过图片实现圆角，样式如下：
+    
+{% highlight css%}
+   .box {
+        width: 418px;
+        background: #effce7 url(img/bottom.gif) no-repeat left bottom;
+    }
+{% endhighlight %}
+
+上面这种方式创建的框可以随着文本的内容的增加其高度垂直增高。
+
+
++ 早期的垂直渐变框：
+
+{% highlight css%}
+/*包含框*/
+.box {
+    width: 424px;
+    background: url(img/tile2.gif) repeat-y;
+}
+
+
+/*顶部区域*/
+.box h2 {
+    background: url(img/top2.gif) no-repeat left top;
+    padding-top: 20px;
+}
+
+
+/*底部区域*/
+.box .last {
+    background: url(img/bottom2.gif) no-repeat left bottom;
+    padding-bottom: 20px;
+}
+
+{% endhighlight %}
+
++ 滑动门：
+    滑动门可以实现灵活的背景框，主要用来实现横向扩展的框。
+    核心思想是：左侧图片压盖右侧图片，顶部图片压盖底部图片。当有4张图片时，从左下 到 右上依次被压盖。
+    
++ 由于CSS3之前一个容器只能添加一张背景图片，所以要实现灵活框需要滑动门技术。在支持CSS3的浏览器中可以为一个框添加多张图片，代码如下：
+
+{% highlight css%}
+   .box {
+        background-image: url(img/mtop-left.gif), url(img/mtop-right.gif), url(img/mbottom-left.gif), url(img/mbottom-right.gif);
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position: top left, top right, bottom left, bottom right;
+    }
+{% endhighlight %}
+
+
++ 加入浏览器支持CSS3中的border-radius，那么圆角框的实现将更加简单。
++ 另外一种实现圆角框的方式是通过border-image,这种方法又称为“九宫格”缩放法。
+{% highlight css%}
+.box {
+    -webkit-border-image: url(img/corners.gif) 25% 25% 25% 25% / 25px round round;
+}
+{% endhighlight %}
+
+通过这种方式可以通过一张大图来实现圆角。
+
+##### 背景图像效果-阴影
+
++ 早期的阴影可以通过边框颜色、内外边距的设置来实现、
+
+{% highlight css%}
+.img-wrapper img {
+    background: #fff;
+    padding: 4px;
+    border: 1px solid #a9a9a9;
+    position: relative;
+    left: -5px;
+    top: -5px;
+}
+{% endhighlight %}
+
++ 浏览器支持CSS3的box-shadow之后可以实现各种阴影。
+
+##### 背景图像效果-透明度
+
++ 通过 opacity:0.8 这样方式来实现。
++ 另外一种方式通过RGBa来实现。
+
+{% highlight css%}
+.box {
+    background-color: rgba(0,0,0,0.6);
+}
+{% endhighlight %}
+
++ PNG图片的a通道来实现透明。
