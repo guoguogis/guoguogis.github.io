@@ -1,4 +1,4 @@
-guoguogis.github.io|www.jeosea.com
+guoguogis.github.io
 ==========
 
 ## SWITCH THEME
