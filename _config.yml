@@ -3,15 +3,15 @@
 permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: true
-mardown: redcarpet
+highlighter: rouge
+mardown: kramdown
 encoding: utf-8
 
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jeosea's blog
+title : guoguogis's blog
 tagline: Site Tagline
 lasttime: 2014-08-17    # please modify before each push
 author :
@@ -68,7 +68,7 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : false
+  ASSET_PATH : /assets/themes/the-program
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
